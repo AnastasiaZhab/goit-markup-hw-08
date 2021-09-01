@@ -28,11 +28,12 @@
   display: flex;
   margin-top: -1 * $mt;
   margin-left: -1 * $ml;
+  flex-wrap: wrap;
 }
 
 @mixin listItem($mt, $ml, $q, $gap) {
-  // display: flex;
+  display: flex;
   margin-top: $mt;
   margin-left: $ml;
-  flex-basis: calc(100% / #{$q}-#{$gap});
+  flex-basis: calc(100% / #{$q} - #{$gap});
 }

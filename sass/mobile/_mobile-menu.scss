@@ -38,10 +38,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  min-height: 40px;
-  min-width: 40px;
+  height: 40px;
+  width: 40px;
   //   @include flexCentered(flex, center, center);
-
   margin: 0;
   padding: 0;
 
@@ -57,6 +56,17 @@
 
 .mobile-menu__contacts {
   @extend %list--style;
+}
+
+.mobile-menu__contacts-link {
+  &--phone {
+    @include font(Roboto, 34px, 500, 0.02em, 1.176, $accent-color);
+    text-decoration: none;
+  }
+  &--email {
+    @include font(Roboto, 24px, 500, 0.02em, 1.167, $secondary-text-color);
+    text-decoration: none;
+  }
 }
 
 .mobile-menu__link {
@@ -101,6 +111,7 @@
   flex-direction: row-reverse;
   border: none;
   background-color: $primary-white-color;
+  padding: 0;
   // width: 40px;
   // height: 40px;
   // position: absolute;
@@ -109,4 +120,19 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__contacts-item + .mobile-menu__contacts-item {
+  margin-bottom: 32px;
 }

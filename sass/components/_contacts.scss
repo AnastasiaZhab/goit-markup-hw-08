@@ -1,6 +1,11 @@
 .contacts {
   // @include flexCentered(flex, null, null);
   min-width: 230px;
+
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 }
 
 .contacts__link {
@@ -55,9 +60,9 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
-    @include flexCentered(flex, null, baseline);
-  }
+  // @media screen and (min-width: 768px) {
+  //   @include flexCentered(flex, null, baseline);
+  // }
 }
 
 .contacts__item {
@@ -65,5 +70,12 @@
     &:not(:last-child) {
       margin-bottom: 8px;
     }
+  }
+}
+
+.contacts__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 }

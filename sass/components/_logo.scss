@@ -17,6 +17,13 @@
       padding-bottom: 20px;
     }
   }
+
+  &--mobile {
+    @include font($secondary-font, 24px, bold, 0.03em, 1.167, $black-color);
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .logo > span {

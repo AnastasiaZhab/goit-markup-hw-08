@@ -8,38 +8,44 @@
 
 .features__list {
   padding: 0;
-  // @include flexCentered(flex, null, null);
   @extend %list--style;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    @include list(15px, 15px);
-    // flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
 .features__item {
-  // display: inline-block;
-  // max-width: 354px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    @include listItem(15px, 15px, 2, 15px);
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 
-  // @media screen and (min-width: 1200) {
-  //   @include listItem(30px, 30px, 4, 30px);
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-  // }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
+
+// @media screen and (min-width: 1200) {
+// flex-basis: calc((100% - 4 * 30px) / 4);
+// &:not(:last-child) {
+//   margin-right: 30px;
+// }
+// }
 
 .features__subtitle {
   margin-bottom: 10px;
@@ -83,6 +89,11 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
     height: 120px;
   }
 }

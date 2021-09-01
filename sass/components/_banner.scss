@@ -1,4 +1,5 @@
 .banner {
+  @include flexCentered(flex, center, center);
   background: $background-footer-color;
   text-align: center;
   width: 480px;
@@ -19,11 +20,19 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/header-mobile@2x.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-mobile@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero/haeder-tablet.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/haeder-tablet.jpg);
 
     width: 768px;
     height: 400px;
@@ -31,20 +40,32 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/header-tablet@2x.jpg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/header-tablet@2x.jpg);
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/hero/header-desktop.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-desktop.jpg);
 
-    max-width: 1600px;
+    width: 1200px;
     height: 600px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/header-desktop@2x.jpg);
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/header-desktop@2x.jpg);
     }
   }
 }
@@ -57,3 +78,7 @@
   text-transform: uppercase;
   padding-bottom: 30px;
 }
+
+// .banner__box {
+//   @include flexCentered(flex, center, center);
+// }
