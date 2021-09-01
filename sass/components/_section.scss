@@ -1,0 +1,39 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--grey {
+    background-color: $portfolio-button;
+  }
+  &--nopadding {
+    padding-top: 0;
+  }
+
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
+}
+
+.section__subtitle {
+  text-align: center;
+  // @include font($primary-font, 36px, bold, 0.03em, 1.167, $primary-text-color);
+  @include font($primary-font, 28px, bold, 0.03em, 1.178, $primary-text-color);
+
+  margin-bottom: 30px;
+}
+
+// .subject__item {
+//   width: 370px;
+//   height: 294px;
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }

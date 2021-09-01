@@ -1,0 +1,88 @@
+// .features {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-wrap: wrap;
+//     // @include list(30px, 30px);
+//   }
+// }
+
+.features__list {
+  padding: 0;
+  // @include flexCentered(flex, null, null);
+  @extend %list--style;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    @include list(15px, 15px);
+    // flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+.features__item {
+  // display: inline-block;
+  // max-width: 354px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include listItem(15px, 15px, 2, 15px);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  // @media screen and (min-width: 1200) {
+  //   @include listItem(30px, 30px, 4, 30px);
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  // }
+}
+
+.features__subtitle {
+  margin-bottom: 10px;
+  text-align: center;
+  @include font($primary-font, 14px, bold, 0.03em, 1.143, $primary-text-color);
+  text-transform: uppercase;
+
+  //   @media screen and (min-width: 480px) {
+  //     text-align: center;
+  //   }
+}
+
+.features__text {
+  text-align: left;
+  // margin: 0;
+  @include font(
+    $primary-font,
+    14px,
+    normal,
+    0.03em,
+    1.714,
+    $secondary-text-color
+  );
+}
+
+.features__icon {
+  @include flexCentered(flex, center, center);
+  text-align: center;
+  list-style: none;
+  margin-bottom: 30px;
+
+  // max-width: 450px;
+  // height: 120px;
+  background: $portfolio-button;
+  border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 120px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+}

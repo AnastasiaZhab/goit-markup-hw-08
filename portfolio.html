@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<!--Шапка (баннер)-->
+
+<body>
+    <header class="page-header">
+        <div class="container main-nav">
+            <nav class="site-nav">
+                <a href="./index.html" class="logo">
+                    <span>Web</span>Studio
+                </a>
+    
+                <ul class="site-nav__list list--style">
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="header-contacts list--style">
+                <li class="header-contacts__item">
+    
+                    <a href="mailto:info.devstudio.com" class="header-contacts__link">
+                        <svg class="header-contacts__icon-email">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info.devstudio.com</a>
+    
+                </li>
+                <li class="header-contacts__item">
+    
+                    <a href="tel:+380961111111" class="header-contacts__link">
+                        <svg class="header-contacts__icon-phone">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+    
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Портфолио-->
+    <main>
+
+        <section class="portfolio-nav section">
+            <div class="container">
+                <h1 class="portfolio-nav__title"> Портфолио </h1>
+                <ul class="portfolio-nav__list list--style">
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button portfolio-nav__button--active"
+                            type="button">Все</button></li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button " type="button">Веб-сайты</button>
+                    </li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Приложения</button>
+                    </li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Дизайн</button></li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+
+                <ul class="portfolio list--style">
+                    <li class="portfolio__item">
+                        <a href="#" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                                <img src="./images/drop/img1.jpg" alt="Открытая страница сайта на ноутбуке" width="370"
+                                    class="portfolio__image">
+                                    <div class="portfolio__overley">
+                                        <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                            (центра
+                                            перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                            получить
+                                            изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                                    </div>
+                            </div>
+                                <div class="portfolio__card">
+                                    <h2 class="portfolio__subtitle">Технокряк</h2>
+                                    <p class="portfolio__text">Веб-сайт</p>
+                                </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img2.jpg" alt="Баскетбольные противники" width="370" class="portfolio__image">
+                                <div class="portfolio__overley">
+                                    <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                        (центра
+                                        перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                        получить
+                                        изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img3.jpg" alt="Логотип рыбного ресторана, рыба на фоне названия"
+                                width="370" class="portfolio__image">
+                                <div class="portfolio__overley">
+                                    <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                        (центра
+                                        перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                        получить
+                                        изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Ресторан Seafood</h2>
+                                <p class="portfolio__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img4.jpg" alt="Наушники" width="370" class="portfolio__image">
+                            <div class="portfolio__overley">
+                                <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                    (центра
+                                    перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                    получить
+                                    изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                            </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Проект Prime</h2>
+                                <p class="portfolio__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img5.jpg" alt="Две картонные коробочки" width="370" class="portfolio__image">
+                            <div class="portfolio__overley">
+                                <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                    (центра
+                                    перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                    получить
+                                    изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                            </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Проект Boxes</h2>
+                                <p class="portfolio__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img6.jpg" alt="Монитор компьютера" width="370" class="portfolio__image">
+                            <div class="portfolio__overley">
+                                <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                    (центра
+                                    перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                    получить
+                                    изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                            </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Inspiration has no Borders</h2>
+                                <p class="portfolio__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img7.jpg" alt="Открытая книга" width="370" class="portfolio__image">
+                            <div class="portfolio__overley">
+                                <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                    (центра
+                                    перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                    получить
+                                    изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                            </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Издание Limited Edition</h2>
+                                <p class="portfolio__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img8.jpg" alt="Бирка" width="370" class="portfolio__image">
+                            <div class="portfolio__overley">
+                                <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                    (центра
+                                    перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                    получить
+                                    изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                            </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Проект LAB</h2>
+                                <p class="portfolio__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link">
+                            <div class="portfolio__image--relative">
+                            <img src="./images/drop/img9.jpg" alt="Руки человека который печатает на ноутбуке"
+                                width="370" class="portfolio__image">
+                                <div class="portfolio__overley">
+                                    <p class="portfolio__overley-text">Для получения перспективного изображения какого-либо предмета проводят из выбранной точки Евклидова пространства
+                                        (центра
+                                        перспективы) лучи ко всем точкам данного предмета. На пути лучей ставят ту поверхность, на которой желают
+                                        получить
+                                        изображение. В пересечении проведённых лучей с поверхностью получают искомое изображение предмета.</p>
+                                </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <h2 class="portfolio__subtitle">Growing Business</h2>
+                                <p class="portfolio__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футтер -->
+    <footer class="footer">
+        <div class="container footer-box">
+            <div class="contacts">
+                <a href="./index.html" class="logo logo--dark">
+                    <span>Web</span>Studio
+                </a>
+                <address class="contacts__address">
+                    <p class="contacts__text">
+                        г.Киев, пр-т Леси Украинки, 26
+                    </p>
+                    <ul class="contacts__list list--style">
+                        <li class="contacts__item">
+                            <a href="mailto:info@example.com" class="contacts__link">info@example.com</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="join">
+                <p class="join__text">Присоединяйтесь</p>
+                <ul class="join__social-list">
+                    <li class="join__social-item">
+                        <a href="" class="join__social-link">
+                            <svg class="join__social-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__social-item">
+                        <a href="" class="join__social-link">
+                            <svg class="join__social-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__social-item">
+                        <a href="" class="join__social-link">
+                            <svg class="join__social-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="join__social-item">
+                        <a href="" class="join__social-link">
+                            <svg class="join__social-icon">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"> </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="subscribe">
+                <p class="join__text">Подпишитесь на рассылку</p>
+                <form class="subscribe__form">
+                    <label class="subscribe__label">
+                        <input class="subscribe__input" name="subscribe" type="email" placeholder="E-mail">
+                    </label>
+                    <button class="button button--subscribe" type="submit">
+                        Подписаться
+                        <svg class="button__icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+    
+        </div>
+    
+    </footer>
+    
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+</body>
+
+</html>

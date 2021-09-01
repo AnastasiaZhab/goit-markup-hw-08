@@ -1,0 +1,38 @@
+@mixin sectionMixin($t, $b) {
+  padding-top: $t;
+  padding-bottom: $b;
+}
+
+@mixin flexCentered($display, $jc, $ai) {
+  display: $display;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin font($fm, $fs, $fw, $ls, $lh, $fcolor) {
+  font-family: $fm;
+  font-size: $fs;
+  font-weight: $fw;
+  letter-spacing: $ls;
+  line-height: $lh;
+  color: $fcolor;
+}
+
+@mixin transition($one, $two, $three, $time, $ttfunk) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $ttfunk;
+}
+
+@mixin list($mt, $ml) {
+  display: flex;
+  margin-top: -1 * $mt;
+  margin-left: -1 * $ml;
+}
+
+@mixin listItem($mt, $ml, $q, $gap) {
+  // display: flex;
+  margin-top: $mt;
+  margin-left: $ml;
+  flex-basis: calc(100% / #{$q}-#{$gap});
+}
