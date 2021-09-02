@@ -1475,10 +1475,17 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-  height: 581px;
-  width: 528px;
+  height: 609px;
+  width: 450px;
   background-color: #fff;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__icon-close {
@@ -1544,6 +1551,7 @@ body {
 }
 
 .form__label {
+  margin-bottom: 4px;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -1615,13 +1623,13 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
-  width: 448px;
+  width: 370px;
   height: 120px;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   letter-spacing: 0.01em;
-  line-height: 1.143;
+  line-height: 1.167;
   color: #212121;
   -webkit-transition-property: border-color;
   transition-property: border-color;
@@ -1631,6 +1639,19 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .form__textarea-field {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    line-height: 1.143;
+    color: #212121;
+    width: 448px;
+    height: 120px;
+  }
+}
+
 .form__textarea-field:hover, .form__textarea-field:focus {
   border-color: #2196f3;
   outline: none;
@@ -1638,17 +1659,34 @@ body {
 
 .checkbox {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   letter-spacing: 0.03em;
-  line-height: 1.714;
+  line-height: 1.167;
   color: #757575;
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    line-height: 1.714;
+    color: #757575;
+  }
+}
+
 .checkbox__label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 23px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    padding-left: 35px;
+  }
 }
 
 .checkbox__link {
@@ -1685,7 +1723,12 @@ body {
   height: 15px;
   border: 2px solid #000;
   border-radius: 2px;
-  margin-left: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    margin-left: 12px;
+  }
 }
 
 .portfolio-nav__title {
@@ -1738,7 +1781,7 @@ body {
   display: block;
   border-radius: 4px;
   border: none;
-  margin: 0;
+  margin: 0 0 0 8px;
   padding: 6px 24px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -1806,9 +1849,11 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1817,11 +1862,17 @@ body {
     margin-left: -30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 767px) {
+.portfolio__item {
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
   .portfolio__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1830,8 +1881,18 @@ body {
     margin-left: 30px;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
   }
 }
 
@@ -1888,11 +1949,17 @@ body {
 
 .portfolio__image {
   display: block;
-  width: 100%;
-  height: auto;
+  height: 294px;
+  width: 450px;
 }
 
-.portfolio__image--relative {
+@media screen and (min-width: 768px) {
+  .portfolio__image {
+    width: 354px;
+  }
+}
+
+.portfolio__image-relative {
   position: relative;
   overflow: hidden;
 }
@@ -1919,6 +1986,7 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.556;
   color: #fff;
+  padding: 10px 24px;
 }
 
 .mobile-menu__container {
@@ -1939,12 +2007,6 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (max-width: 480px) {
-  .mobile-menu__container {
-    padding: 48px 40px;
-  }
 }
 
 .mobile-menu__container.is-open {
