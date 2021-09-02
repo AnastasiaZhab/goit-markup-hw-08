@@ -26,13 +26,11 @@
   transform: translateY(0);
 }
 
-// .site-nav {
-//   @include flexCentered(flex, null, center);
-
-//   @media screen and (max-width: 768px) {
-//     display: none;
-//   }
-// }
+.site-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 
 .mobile-menu__toggle {
   position: absolute;
@@ -78,9 +76,9 @@
 }
 
 .mobile-menu__link {
-  //   display: block;
-  //   padding: 48px 40px;
-  //   padding-bottom: 32px;
+  display: block;
+  padding: 48px 40px;
+  padding-bottom: 32px;
   text-decoration: none;
 
   @include font(Roboto, 40px, 500, 0.02em, 1.172, $primary-text-color);
@@ -120,11 +118,11 @@
   border: none;
   background-color: $primary-white-color;
   padding: 0;
-  // width: 40px;
-  // height: 40px;
-  // position: absolute;
-  // top: 10px;
-  // right: 15px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   @media screen and (min-width: 768px) {
     display: none;
   }
