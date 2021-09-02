@@ -76,9 +76,9 @@
 }
 
 .mobile-menu__link {
-  display: block;
-  padding: 48px 40px;
-  padding-bottom: 32px;
+  // display: block;
+  // padding: 48px 40px;
+  // padding-bottom: 32px;
   text-decoration: none;
 
   @include font(Roboto, 40px, 500, 0.02em, 1.172, $primary-text-color);
