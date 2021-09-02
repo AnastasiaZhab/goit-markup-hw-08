@@ -1,6 +1,10 @@
 .subscribe {
   display: block;
-  // margin-left: 93px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 15px;
+  }
 }
 
 // .subscribe__form {
@@ -18,9 +22,18 @@
   background-color: transparent;
   padding-left: 16px;
   color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
-// .subscribe__form {
-//   display: flex;
-//   flex-direction: column;
-// }
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}

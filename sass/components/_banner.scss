@@ -2,8 +2,8 @@
   @include flexCentered(flex, center, center);
   background: $background-footer-color;
   text-align: center;
-  width: 480px;
-  height: 400px;
+  max-width: 1600px;
+  min-height: 400px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(
@@ -13,9 +13,6 @@
     url(../images/hero/header-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
-  // padding-top: 118px;
-  // padding-bottom: 118px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -33,9 +30,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/haeder-tablet.jpg);
-
-    width: 768px;
-    height: 400px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -55,7 +49,6 @@
       ),
       url(../images/hero/header-desktop.jpg);
 
-    width: 1200px;
     height: 600px;
 
     @media (min-device-pixel-ratio: 2),
@@ -71,14 +64,18 @@
 }
 
 .banner__title {
-  // @include flexCentered(flex, center, center);
-  display: flex;
-  flex-direction: column;
   @include font($primary-font, 26px, 900, 0.06em, 1.615, $primary-white-color);
   text-transform: uppercase;
-  padding-bottom: 30px;
-}
+  margin: 0 0 30px 0;
 
-// .banner__box {
-//   @include flexCentered(flex, center, center);
-// }
+  @media screen and (min-width: 1200px) {
+    @include font(
+      $primary-font,
+      44px,
+      900,
+      0.06em,
+      1.364,
+      $primary-white-color
+    );
+  }
+}

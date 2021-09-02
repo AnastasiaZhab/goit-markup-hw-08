@@ -1,20 +1,19 @@
 .logo {
   // display: block;
   // padding-top: 24px;
-  // padding-bottom: 24px;
+  // padding-bottom: 20px;
 
   text-decoration: none;
   @include font($secondary-font, 26px, bold, 0.03em, 1.192, $black-color);
   &--dark {
     color: $primary-white-color;
     // padding-top: 0;
-    // padding-bottom: 0;
-    // margin-bottom: 20px;
+    // padding-bottom: 20px;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 768px) {
       display: flex;
       justify-content: center;
-      padding-bottom: 20px;
     }
   }
 

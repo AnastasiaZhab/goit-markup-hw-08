@@ -1,5 +1,4 @@
 .our-team {
-  // @include flexCentered(flex, null, null);
   @extend %list--style;
   padding-left: 0;
 
@@ -19,6 +18,7 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+    // width: 450px;
   }
 
   @media screen and (min-width: 768px) {

@@ -1,10 +1,19 @@
 .header-contacts {
   @extend %list--style;
-  display: block;
   align-items: center;
   // @include flexCentered(flex, null, center);
   margin-left: 84px;
   padding-left: 0;
+
+  // @media screen and (max-width: 767px) {
+  //   width: 480px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: 305px;
+  }
 }
 
 .header-contacts__link {
@@ -79,14 +88,19 @@
 }
 
 .header-contacts__item {
-  // padding-top: 10px;
-  // padding-bottom: 10px;
-  &--email {
-    padding-top: 15px;
-    margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
+  // &--email {
+  //   padding-top: 15px;
+  //   margin-bottom: 10px;
+  // }
 
-  &--phone {
-    padding-bottom: 15px;
-  }
+  // &--phone {
+  //   padding-bottom: 15px;
+  // }
 }
