@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $primary-white-color;
-  //   z-index: 999;
+  z-index: 99;
   padding: 48px 40px;
 
   transform: translateY(-100%);
@@ -17,9 +17,9 @@
     $transition-timing-function
   );
 
-  // @media screen and (max-width: 480px) {
-  //   padding: 48px 40px;
-  // }
+  @media screen and (max-width: 480px) {
+    padding: 48px 40px;
+  }
 }
 
 .mobile-menu__container.is-open {
@@ -34,7 +34,7 @@
 
 .mobile-menu__toggle {
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 15px;
   height: 40px;
   width: 40px;
@@ -68,6 +68,9 @@
   &--phone {
     @include font(Roboto, 34px, 500, 0.02em, 1.176, $accent-color);
     text-decoration: none;
+    @media screen and (max-width: 400px) {
+      @include font(Roboto, 26px, 500, 0.02em, 1.176, $accent-color);
+    }
   }
   &--email {
     @include font(Roboto, 24px, 500, 0.02em, 1.167, $secondary-text-color);
@@ -82,6 +85,9 @@
   text-decoration: none;
 
   @include font(Roboto, 40px, 500, 0.02em, 1.172, $primary-text-color);
+  @media screen and (max-width: 400px) {
+    @include font(Roboto, 32px, 500, 0.02em, 1.172, $primary-text-color);
+  }
   @include transition(
     color,
     null,
@@ -113,7 +119,7 @@
   //   }
 }
 .mobile-nav-button {
-  @include flexCentered(flex, center, center);
+  // @include flexCentered(flex, center, center);
   flex-direction: row-reverse;
   border: none;
   background-color: $primary-white-color;
@@ -132,7 +138,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  // max-width: 350px;
+  // max-width: 480px;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -159,6 +166,7 @@
 
 .social-mobmenu {
   display: flex;
+  flex-wrap: wrap;
   @extend %list--style;
   text-decoration: none;
   padding: 0;

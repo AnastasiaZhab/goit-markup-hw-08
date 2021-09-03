@@ -2,7 +2,7 @@
   @extend %list--style;
   align-items: center;
   // @include flexCentered(flex, null, center);
-  margin-left: 84px;
+  margin-left: 75px;
   padding-left: 0;
 
   // @media screen and (max-width: 767px) {
@@ -29,8 +29,8 @@
       1.143,
       $secondary-text-color
     );
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     @include flexCentered(flex, null, center);
   }
 
@@ -52,27 +52,12 @@
   &:focus .header-contacts__icon-phone {
     fill: $accent-color;
   }
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  // &--email {
-  //   padding-top: 15px;
-  // }
-
-  // &--phone {
-  //   padding-bottom: 15px;
-  // }
 }
-
-// .header-contacts__item + .header-contacts__item {
-//   margin-left: 30px;
-// }
 
 .header-contacts__icon-email {
   width: 14px;
   height: 10px;
-  // margin-right: 10px;
+  margin-right: 10px;
 
   @include transition(
     fill,
@@ -81,12 +66,16 @@
     $transition-duration,
     $transition-timing-function
   );
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }
 
 .header-contacts__icon-phone {
   width: 10px;
   height: 14px;
-  // margin-right: 10px;
+  margin-right: 10px;
 
   @include transition(
     fill,
@@ -95,22 +84,30 @@
     $transition-duration,
     $transition-timing-function
   );
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }
 
 .header-contacts__item {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-right: auto;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
-  // &--email {
-  //   padding-top: 15px;
-  //   margin-bottom: 10px;
-  // }
 
-  // &--phone {
-  //   padding-bottom: 15px;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &--email {
+      padding-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    &--phone {
+      padding-bottom: 15px;
+    }
+  }
 }
